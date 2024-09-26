@@ -78,15 +78,16 @@ public abstract class AbstractConfigThreadPoolDynamicRefresh implements ThreadPo
 
     @Override
     public void afterPropertiesSet() {
+
+    }
+
+    @Override
+    public void run(ApplicationArguments args) {
         try {
             registerListener();
         } catch (Exception ex) {
             log.error("Hippo4j failed to initialize register listener.", ex);
         }
-    }
-
-    @Override
-    public void run(ApplicationArguments args) {
         try {
             publishDynamicThreadPoolEvent((BootstrapConfigProperties) bootstrapConfigProperties);
         } catch (Exception ex) {

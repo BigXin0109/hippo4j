@@ -29,6 +29,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ConfigNacosSpringBootExampleApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConfigNacosSpringBoot15ExampleApplication.class, args);
+        SpringApplication.run(ConfigNacosSpringBootExampleApplication.class, args);
     }
 }
