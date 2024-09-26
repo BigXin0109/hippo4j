@@ -77,11 +77,6 @@ public abstract class AbstractConfigThreadPoolDynamicRefresh implements ThreadPo
     }
 
     @Override
-    public void afterPropertiesSet() {
-
-    }
-
-    @Override
     public void run(ApplicationArguments args) {
         try {
             registerListener();
